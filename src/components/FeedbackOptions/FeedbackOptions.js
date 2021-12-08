@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onIncrement }) => (
-  <div className={styles.item}>
+  <ul className={styles.list}>
     {options.map(option => (
       <button
         className={styles.button}
@@ -14,7 +14,7 @@ const FeedbackOptions = ({ options, onIncrement }) => (
         {option.replace(option[0], option[0].toUpperCase())}
       </button>
     ))}
-  </div>
+  </ul>
 );
 
 FeedbackOptions.propTypes = {
