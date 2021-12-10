@@ -25,8 +25,9 @@ class App extends Component {
   };
 
   incrementHandler = e => {
-    const key = e.target.name;
-    this.setState(prev => ({ [key]: prev[key] + 1 }));
+    this.setState(prevState => ({
+      [e.target.name]: prevState[e.target.name] + 1,
+    }));
   };
 
   render() {
