@@ -24,9 +24,9 @@ class App extends Component {
     return '0%';
   };
 
-  incrementHandler = e => {
+  incrementHandler = feedback => {
     this.setState(prevState => ({
-      [e.target.name]: prevState[e.target.name] + 1,
+      [feedback]: prevState[feedback] + 1,
     }));
   };
 

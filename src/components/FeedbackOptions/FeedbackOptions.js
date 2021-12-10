@@ -9,7 +9,7 @@ const FeedbackOptions = ({ options, onIncrement }) => (
         className={styles.button}
         name={option}
         key={option}
-        onClick={onIncrement}
+        onClick={() => onIncrement(option)}
       >
         {option.replace(option[0], option[0].toUpperCase())}
       </button>
